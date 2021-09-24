@@ -11,10 +11,5 @@ You can click the Preview link to take a look at your changes.
 
 This is a colab file with DenisAdamec!
 
-asd
-
-
-more changes
-
-
-asdasdasda
+Hello this is DenisAdamec and I want to merge with you!!!
+Please accept me!!!
