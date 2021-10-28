@@ -20,3 +20,4 @@
 * Medicinal applications: https://www.uofmhealth.org/health-library/ut1025spec
 * The Scoville Heat Scale: https://www.naturespath.com/en-us/blog/all-about-the-scoville-scale/#:~:text=To%20determine%20the%20Scoville%20Heat,the%20heat%20of%20the%20pepper
 * Wiki Species: https://species.wikimedia.org/wiki/Capsicum_annuum
+* Therapeutic Potential of Capsaicin: https://www.researchgate.net/publication/305644864_Harnessing_the_Therapeutic_Potential_of_Capsaicin_and_Its_Analogues_in_Pain_and_Other_Diseases
