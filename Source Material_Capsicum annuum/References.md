@@ -1,7 +1,7 @@
 # Source material used for the poster of Capsicum annuum
 
 ## Chemical and Biological resource browsers
-* NCIB genome Browser: https://www.ncbi.nlm.nih.gov/genome?term=AYRZ00000000&cmd=DetailsSearch
+* NCBI genome Browser: https://www.ncbi.nlm.nih.gov/genome?term=AYRZ00000000&cmd=DetailsSearch
 * PubChem Capsaicin: https://pubchem.ncbi.nlm.nih.gov/compound/Capsaicin#section=3D-Conformer
 * Uniprot TRPV1 transmembrane receptor: 
   * https://www.uniprot.org/uniprot/Q8NER1
