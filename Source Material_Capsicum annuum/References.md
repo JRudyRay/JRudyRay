@@ -15,3 +15,5 @@
 * Domestication: https://www.pnas.org/content/111/17/6165
 * Pungency limitations: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3311884/
 * Tree Shrew: https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2004921
+* 5 Main species of Capsicum: https://chilepeppers.com/p/about/chile-pepper-species/
+* Understand spiciness: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5326624/#:~:text=TRPV1%20is%20a%20non%2Dselective,et%20al.%2C%201997
