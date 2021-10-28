@@ -1,0 +1,363 @@
+% Simple poster (portrait)
+% Author: Sofia Jijon (https://sjijon.github.io)
+% Last Update: Sept 9, 2021
+% Latest Version: https://github.com/sjijon/TeX-templates/tree/main/Tikzposter%20posters/Simple%20poster
+
+\documentclass[a0paper,portrait,margin=0pt, colspace=36pt,subcolspace=0pt,blockverticalspace=36pt,innermargin=50pt]{tikzposter}
+% portrait or landscape
+\usepackage[latin9]{inputenc}
+\usepackage[square,numbers]{natbib} 	% Bibliography manager
+\usepackage{amsmath,amssymb}
+\usepackage{lipsum}  				    % Random Text
+\usepackage[colalign]{aligncolsatbottom}  %To align columns at bottom (!! please run 2 times)
+\usepackage{makecell}
+\usepackage{fourier} 
+\usepackage{array}
+\usepackage{graphicx,wrapfig}
+\usepackage[dvipsnames]{xcolor}
+%..............................................................................................................................................................................................
+% Display
+\tikzposterlatexaffectionproofoff 			
+\usetikzlibrary{shapes.geometric,arrows.meta,positioning}  %Tikz Libraries
+
+% Fonts
+\usepackage{helvet}					% Sans-Serif
+\renewcommand{\familydefault}{\sfdefault}	%
+
+\renewcommand\theadalign{bc}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
+
+% MyOrange original {1.0, 0.49, 0.1}
+%\definecolor{blue-violet}{rgb}{0.54, 0.17, 0.89} PURPLE
+
+% Colors
+	\definecolor{MyOrange}{rgb}{0.54, 0.17, 0.89} %now PURPLE
+	\definecolor{MyBrown}{rgb}{0.82, 0.1, 0.26}
+	\definecolor{MyGreen}{rgb}{0.33, 0.42, 0.18}
+
+% Theme
+\usetheme{Default}
+\definecolorstyle{MyStyle2016}{
+	\definecolor{ColorOne}{named}{MyBrown} 
+	\definecolor{ColorTwo}{named}{MyOrange}
+	\definecolor{ColorThree}{named}{MyGreen}
+}{
+    % Title Colors
+    \colorlet{titlebgcolor}{ColorOne}
+    \colorlet{titlefgcolor}{white}
+    % Background Colors
+    \colorlet{backgroundcolor}{ColorOne!15}
+    \colorlet{framecolor}{ColorOne}
+    % Block Colors
+    \colorlet{blocktitlebgcolor}{white}
+    \colorlet{blocktitlefgcolor}{ColorTwo}
+    \colorlet{blockbodybgcolor}{white}
+    \colorlet{blockbodyfgcolor}{black}
+    % Innerblock Colors
+    \colorlet{innerblocktitlebgcolor}{ColorOne!15}
+    \colorlet{innerblocktitlefgcolor}{black}
+    \colorlet{innerblockbodybgcolor}{ColorOne!15}
+    \colorlet{innerblockbodyfgcolor}{black}
+    % Note colors
+    \colorlet{notebgcolor}{ColorTwo!20}
+    \colorlet{notefgcolor}{ColorTwo}
+    \colorlet{notefrcolor}{ColorTwo}
+ }
+
+% Color style
+\usecolorstyle{MyStyle2016}
+%..............................................................................................................................................................................................
+\title{The Chilli Pepper - \textit{Capsicum annuum}}
+
+\author{John Oehninger}
+
+\institute{ Botanical Garden of the University of Zurich}
+
+% \textsuperscript{1}	
+
+%..............................................................................................................................................................................................
+\begin{document}
+%
+%
+%	HEAD
+%
+%....................................................................................
+%
+%	Title
+%
+\maketitle[width=0.96\linewidth,titletoblockverticalspace=36pt,linewidth=0,roundedcorners=10]
+%..............................................................................................................................................................................................
+%
+%	LEFT COLUMN
+%
+\begin{columns}
+\column{0.33}
+%....................................................................................
+%
+%	Block
+%
+\block[titlecenter,roundedcorners=16]{What makes the chilli pepper so interesting?}{
+\large
+\vspace{-1.5cm}
+	\begin{center}
+		\includegraphics[width=0.8\linewidth]{Assignment 1/Figures/chillyy.jpg}
+	\end{center}
+\\
+	\raggedright	
+\begin{itemize}
+    \item Long Cultural History
+    \item Domesticated about 6'500 ya \\
+     \begin{itemize}
+        \item  Oldest domesticated spice? \\
+     \end{itemize}
+    \item Evolutionary adaption
+    \item High Pungency
+    \item Medicinal use
+    \item Human-Chilli interaction never meant to be?
+    \item Capsaicin - \textbf{The spicy molecule}
+    \item Extreme breeding
+\end{itemize}
+	
+}
+%....................................................................................
+%
+%	Block
+%
+\block[titlecenter,roundedcorners=16]{Evolution}{
+
+	\raggedright
+\large
+\vspace{-1cm}
+The story of chilli began in the \textbf{Miocene} epoch (ca. 20 Mya), where the genus \textit{Capsicum}, which is part of the family Solanaceae, broke off from its closest relatives and developed its spiciness.\\
+
+\centering
+\includegraphics[width=1.02\linewidth]{Assignment 1/Figures/phylogenetic tree.png}
+
+\\
+\raggedright
+Capsicum originated from the regions of Peru, Ecuador and Columbia. \\
+\vspace{0.5cm}
+\textbf{Why did chillies become spicy at all?}\\
+Capsaicin is unique to the genus, but it is not understood how they got this trait. \\
+\textbf{Genetic evidence}: structural rearrangements and duplication events.
+
+\includegraphics[width=1.02\linewidth]{Assignment 1/Figures/structural rearrangements.png}
+
+}
+
+%..............................................................................................................................................................................................
+%
+%	CENTER COLUMN
+%
+\column{0.34}
+
+
+\block[notitle,roundedcorners=16]{}{
+
+\Large
+\textbf{Advantages > Disadvantages}
+\vspace{0.4cm}
+
+\large
+    \begin{itemize}
+        \item Protection from insect pests and plant pathogens
+        --> \textit{Fusarium} (Fungus)
+        \item Spicy chilli plants are less drought tolerant than non spicy plants \\
+        --> \textit{Fusarium} thrives in wet regions \\
+        --> \textit{C. annuum} can grow better in wetlands and is more resistant against \textit{Fusarium}
+        \item Protection from mammals
+    \end{itemize}
+
+
+\textit{C. annuum} and \textit{Fusarium} are spread across the entire world today and their regions overlap with each other almost perfectly. Spicy chilli plants are at a clear advantage today!\\
+
+It also seems highly probable that developing spiciness was to keep mammals away, as when they consume seeds, they digest them entirely, where as birds don't digest them and therefore are best at spreading them. \\
+%\textbf{Ideal seed disperser}
+%\begin{enumerate}
+ %   \item No teeth
+ %   \item Digestive tract that doesn't destroy them
+ %   \item Wide dispersal range
+%\end{enumerate}
+\hline 
+\vspace{0.5cm}
+\centering
+\textbf{Fun fact!}\\
+
+The Tree Shrew was able to widen its pallet when it got a point mutation in its transient receptor potential vanilloid type-1 (TRPV1) ion channel (tsV1), which lowers its sensitivity to capsaicinoids.
+
+}
+
+%....................................................................................
+%
+% 	Block
+%
+\block[titlecenter,roundedcorners=16]{\textcolor{red}{Div}\textcolor{orange}{ers}\textcolor{olive}{ity}}{
+\vspace{-1.4cm}
+\centering
+\includegraphics[width=1\linewidth]{Assignment 1/Figures/variety chill.png}
+
+\raggedright
+\large	
+
+Peppers come in a variety of \textbf{shapes}, \textbf{sizes}, \textbf{colors} and \textbf{spice levels}.\\
+\textbf{Shapes} range from thick to slim and long to short. \\
+\textbf{Colors} range from red, orange, yellow to green and purple. \\
+
+Five pepper species account for ~50'000 pepper varieties, most of which are of the species \textit{C. annuum}.\\
+
+	\begin{center}
+	\begin{tabular}{l|c|r}
+	    \hline
+		\textbf{Species} & \textbf{Common pepper} & \textbf{Pungency [SHU]}\\
+		\hline
+		\textit{C. annuum}     & Jalape\~no      & 0-50k\\
+		\hline
+		\textit{C. chinense}   & Habanero      & 100k-350k\\
+		\hline
+		\textit{C. frutescens} & \makecell{Thai pepper \\ Tobasco pepper} & 50k-100k\\
+		\hline
+		\textit{C. baccatum}   & Bishops crown & 30k-50k\\
+		\hline
+		\textit{C. pubescens}  & Rocoto        & 50k-250k\\
+		\hline
+	\end{tabular}
+	\end{center}
+\vspace{1cm}
+
+
+\vspace{0.5cm}
+
+\textbf{Spiciest bred chillies:}\\
+\vspace{0.2cm}
+\begin{center}
+\begin{tabular}{c|c}
+    \hline
+    \textbf{Pepper} & \textbf{\O \,  Pungency [SHU]} \\
+    \hline
+    Pepper X        & 3.18M \\
+    Dragon's Breath & 2.48M \\
+    Carolina Reaper & 2.2M \\
+    Trinidad moruga scorpion &	2.0M \\
+    \hline
+\end{tabular}
+\end{center}
+\vspace{0.7cm}
+
+\hspace{0.7cm}
+\includegraphics[width=0.2\linewidth]{Assignment 1/Figures/sep pep x.jpg}
+\hspace{1.5cm}
+\includegraphics[width=0.3\linewidth]{Assignment 1/Figures/sep dragon.jpg}
+\hspace{1cm}
+\includegraphics[width=0.22\linewidth]{Assignment 1/Figures/Trinidad-Scorpion-Peppers.jpg}\\
+Pepper X, Dragon's Breath \& Trinidad Scorpion
+
+}
+
+
+%..............................................................................................................................................................................................
+%
+% 	RIGHT COLUMN
+%
+\column{0.33}
+
+%....................................................................................
+%
+%	Block
+%
+\block[titlecenter,roundedcorners=16]{Medicinal applications}{
+\vspace{-1cm}
+\large
+Used to help relieve pain by first stimulating and then decreasing the intensity of pain signals in the body. 
+Is used for pain disorders, nervous system problems, cluster headaches, joint problems, skin conditions, mouth sores and many other disorders.
+
+}
+
+%%....................................................................................
+%....................................................................................
+%
+%	Block
+%
+\block[titlecenter,roundedcorners=16]{Domestication}{
+\vspace{-1cm}
+\large
+Study (2014) analysed the origin of Capsicum with species distribution modeling and paleobiolinguistics, with microsatellite genetic data and archaeobotanical data.
+
+\vspace{0.5cm}
+
+\begin{center}
+   \includegraphics[width=0.9\linewidth]{Assignment 1/Figures/plout.jpg}
+\end{center}
+
+%	 \innerblock[bodywidth=0.6\linewidth]{}{Beste Burger}
+}
+
+%....................................................................................
+%
+%	Block
+%
+\block[titlecenter,roundedcorners=16]{Molecular aspects}{
+\vspace{-1.4cm}
+\large
+
+\begin{center}
+	\includegraphics[width=0.85\linewidth]{Assignment 1/Figures/capsaicin_molecule.jpeg}
+\end{center}
+
+The infamous \textit{spicy} molecule. \\
+
+\begin{itemize}
+    \item Hydrophobic tail --> can pass lipid membrane
+    \item Can bind to the TRPV1 transmembrane receptor.
+    \item TRPV1 is heat activated, but Capsaicin can activate it as well!
+\end{itemize}
+
+\raggedright
+
+
+Capsaicin can penetrate the lipid bilayer, allowing it access to the transmembrane binding site of the TRPV1 receptor.\\
+
+\\
+
+	\begin{center}
+	\textbf{TRPV1 receptor}
+	\end{center}
+\raggedright
+Ancient receptor that appeared early in the evolution of vertebrates approx. 400 Mya. \\
+Function is to warn the organism of high levels of heat.
+
+    \begin{center}
+		\includegraphics[width=0.8\linewidth]{Assignment 1/Figures/TRPV1.png}
+	\end{center}	
+
+ }
+ 
+
+\end{columns} 
+%..............................................................................................................................................................................................
+%
+%	FOOT
+%
+%....................................................................................
+%
+%	References
+%
+\block[titleleft,roundedcorners=16]{}{
+
+
+\begin{minipage}{1\linewidth}
+\raggedright
+    \includegraphics[height=9cm]{Assignment 1/Figures/frame.png}
+    \hspace{1cm}
+    \includegraphics[height=6cm]{Assignment 1/Figures/refi.png}
+    \hspace{3.5cm}
+\raggedleft
+    \includegraphics[height=7cm]{Assignment 1/Figures/loglog.png}
+    \hspace{1cm}
+\end{minipage}
+
+}
+
+
+\end{document}
