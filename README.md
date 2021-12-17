@@ -1,5 +1,7 @@
-- 👋 Hi, I’m @JRudyRay
-- 👀 I’m interested in the Life Sciences.
+👋 Hi, I’m John Oehninger
+👀 I’m interested in the Life Sciences.
+
+
 
 <!---
 JRudyRay/JRudyRay is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
