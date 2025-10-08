@@ -1,4 +1,4 @@
-👋 Hi, I’m John Oehninger </br>
+👋 Hi, I’m John </br>
 👀 I’m interested in the Life Sciences.
 
 
